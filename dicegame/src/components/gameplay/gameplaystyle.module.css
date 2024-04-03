@@ -1,0 +1,110 @@
+.NaN{
+    color: red;
+    text-align: end;
+    margin-top: 5vmin;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vmin 0 8vmin;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1{
+    font-size: 10vmin;
+}
+
+.score h3{
+    font-size: 3vmin;
+}
+
+.numberButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vmin;
+}
+
+.numberButtonContainer button{
+    padding: 3.5vmin 4vmin;
+    border: 2px solid black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 2.5vmin;
+    text-align: center;
+    cursor: pointer;
+}
+
+.numberButtonContainer button:hover{
+    background-color: black;
+    color: white;
+}
+
+.selectNumber{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 8vmin;
+    font-size: 2.5vmin;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vmin;
+}
+
+.box img{
+    cursor: pointer;
+}
+
+.box h2{
+    margin-top: 1.5vmin;
+    font-size: 3.3vmin;
+}
+
+.box button{
+    font-size: 2.5vmin;
+    color: black;
+    border: 2px solid black;
+    padding: 1vmin 9vmin;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.box button:nth-of-type(1){
+    color: black;
+    background-color: white;
+    margin-top: 5vmin;
+}
+
+.box button:nth-of-type(2){
+    color: white;
+    background-color: black;
+    margin-top: 3vmin;
+}
+
+.box button:nth-of-type(1):hover{
+    background-color: black;
+    color: white;
+}
+
+.box button:nth-of-type(2):hover{
+    background-color: white;
+    color: black;
+}
+
+.clickButtonsStyle{
+    background-color: black !important;
+    color: white !important;
+}
