@@ -10,21 +10,22 @@ function GamePlay() {
   const [numberSelected,setNumberSelected] = useState(false)
   const [score,setScore] = useState(0)
   const [showRules,setShowRules] = useState(false)
+  const [randomNumber,setRandomNumber] = useState(0)
 
   useEffect(()=>{
-    setCurrentDice(Math.floor(Math.random()*6)+1)
-  },[selectedNumber])
+    setRandomNumber(Math.floor(Math.random()*6)+1)
+  },[selectedNumber,score,numberSelected])
 
   const rollDice = (min,max)=>{
-    setCurrentDice(Math.floor(Math.random()*max)+min)
+    setCurrentDice(randomNumber)
     setNumberSelected(false)
     setShowRules(false)
     if(numberSelected == false){
       alert("select a number")
       return
     }
-    if(selectedNumber === currentDice){
-      setScore(score+currentDice)
+    if(selectedNumber === randomNumber){
+      setScore(score+randomNumber)
     }
     else{
       setScore(score-2)
